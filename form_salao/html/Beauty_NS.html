@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Beauty | Novo Serviço</title>
+	<link rel="stylesheet" href="../css/Beauty.css">
+	
+</head>
+
+<body>
+	<div class="cabecalho">
+		<p class="titulo">M Beauty</p>
+		<p class="subtitulo">@moniquemiranda.studio</p>
+	</div>
+	
+	<form class="formulario">
+		<!--Mudar para página Home-->
+		<!--a href="Beauty_Home.html"> <button class="btn_padrao">Voltar</button> </a-->
+		
+		
+		<!--Entrada de NOME-->
+		<div class="entradas">
+			<label class="Gitem1" for="">Nome:</label>
+			
+			<input class="Gitem2" type="text" placeholder="Novo cadastro"></input>
+			
+			<select class="Gitem3" id="lista_nomes">
+				<option value="vazio">Selecione ⚙️</option>
+			</select>
+		</div>
+		
+		<!--Entrada de SERVIÇO-->
+		<div class="entradas">
+			<label class="Gitem1" for="">Serviço:</label>
+			
+			<select class="Gitem4" id="lista_servicos">
+				<option value="vazio">Selecione ⚙️</option>
+				<option value="mao">Manicure</option>
+				<option value="pe">Pédicure</option>
+				<option value="sombrancelha">Sombrancelha</option>
+			</select>
+		</div>
+		
+		<!--Entrada de DATA E HORA-->
+		<div class="entradas">
+			<label class="Gitem1" for="">Data e horário:</label>
+			
+			<input class="Gitem3" type="time"></input>
+			
+			<input class="Gitem4" type="date"></input>
+			
+		</div>
+		
+		<!--Entrada de FORMA DE PAGAMENTO-->
+		<div class="entradas">
+			<label class="Gitem1" for="">Forma de pagamento:</label>
+			
+			<select class="Gitem2" id="lista_pagamento">
+				<option value="vazio">Selecione ⚙️</option>
+				<option id="credito" value="credito">Crédito 💳</option>
+				<option value="debito">Débito 💳</option>
+				<option value="dinheiro">Dinheiro 💸</option>
+				<option value="pix">Pix 💸</option>
+				<option value="outro">Outros ❗</option>
+			</select>
+			
+			<!--Entrada de PARCELAS-->
+			<label class="Gitem4 parcelas" for="" style="box-shadow: none;">Parcelado em:</label>
+			
+			<select class="Gitem3 parcelas" id="lista_parcelas">
+				<option value="vazio">Selecione ⚙️</option>
+				<option value="1x">1x SEM juros 🟢</option>
+				<option value="2x">2x SEM juros 🟢</option>
+				<option value="3x">3x COM juros 🟠</option>
+				<option value="4x">4x COM juros 🟠</option>
+			</select>
+		</div>
+		
+		<!--Botões de CONTROLE-->
+		<div class="entradas">
+			<!--Entrar com os valores do formulario-->
+			<button class="btn_padrao btn_confirmar Gitem2">Continuar</button>
+			
+			<!--Mudar para página Home-->
+			<a class="btn_padrao btn_voltar Gitem3" href="../index.html">Voltar</a>
+		</div>
+		
+		
+	</form>
+	
+	
+	
+	<!-- SDK do Supabase -->
+	<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+	<!--Conexão com supabase-->
+	<script src="../js/Beauty_Conexao.js"></script>
+	
+</body>
