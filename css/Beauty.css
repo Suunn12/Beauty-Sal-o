@@ -4,7 +4,8 @@
 }
 
 body{
-	background-color: #be9b7b;
+	-background-color: #be9b7b;
+	background-color: black;
 }
 
 .cabecalho{
@@ -187,4 +188,5 @@ body{
 .entradas:has(#lista_pagamento option[value="credito"]:checked) .parcelas{
 	display: block;
 }
+
 
